@@ -1,4 +1,4 @@
-#Repositorio Criado para o projeto final do modulo de Javscript dinamico no Lets_code_by_Ada
+# Repositório Criado para o projeto final do módulo de JavaScript dinâmico no Lets Code by Ada
 
 ## 🚀 Começando:
 O projeto escolhido foi a elaboração de um churrascometro, uma calculadora de churrasco para ajudar a organizar eventos.
