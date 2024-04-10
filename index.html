@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="index.js" defer></script>
+  <title>Churrascometro - cadastro</title>
+</head>
+<body class="light">
+  <div class="toggle">
+    <input type="checkbox" name="" id="checkbox" checked>
+    <label for="checkbox" class="switch">
+      <span class="slider"></span>
+    </label>
+  </div>
+  <div class="content-wrapper">
+    <h1>Churrascômetro</h1>
+    <p>Fique por dentro de todas as novidades.</p>
+    <p>Cadastre seu e-mail e receba promoções especiais!</p>
+    <form id="register-Form" onsubmit="registerForm(event)">
+      <input 
+      type="text" 
+      name="name" 
+      placeholder="Digite seu nome" id="name"
+      oninput="checkInput(this)" 
+      required>
+
+      <input 
+      type="email" 
+      name="email" 
+      id="email" 
+      placeholder="Digite seu email"
+      oninput="checkInput(this)" 
+      required>
+
+      <input 
+      type="text" 
+      oninput="formatCEP(this)" 
+      id="cep" 
+      name="cep" 
+      placeholder="Digite seu CEP" 
+      oninput="checkInput(this)">
+      <label>
+        <input type="checkbox" id="consent" name="consentimento" checked>
+        Concordo em receber comunicações e ofertas personalizadas de acordo com meus interesses.
+      </label>
+        <button id="btn-send" type="submit">Cadastrar</button>
+    </form>
+
+  </div>
+  <footer>
+    Feito com <span>♥</span> por <a href="https://github.com/erikitu">Eric Pinheiro</a>
+  </footer>
+</body>
+
+</html>

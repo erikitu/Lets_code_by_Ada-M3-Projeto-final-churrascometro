@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="checkout.css">
+  <script src="checkout.js" defer></script>
+  <title>Churrascometro - checkout</title>
+</head>
+<body class="">
+  <div class="toggle">
+    <input type="checkbox" name="" id="checkbox" checked>
+    <label for="checkbox" class="switch">
+      <span class="slider"></span>
+    </label>
+  </div>
+  <div class="content-wrapper">
+    <h1>Churrascômetro</h1>
+    <p>Confira a lista para seu churrasco!</p>
+    <span id="barbecueGuests">5 convidados</span>
+    <p>
+      <span id="men">1 homem</span>
+      <span id="women">2 mulheres</span>
+      <span id="children">2 crianças</span>
+    </p>
+
+    <div class="listcontainer">
+      <table>
+        <thead>
+          <tr>
+            <th>ITEM</th>
+            <th>QUANTIDADE</th>
+          </tr>
+        </thead>
+        <tbody id="checkoutTable">
+          <tr>
+            <td>Carne</td>
+            <td>1.4kg</td>
+          </tr>
+          <tr>
+            <td>Pão de Alho</td>
+            <td id="bread">8 unidades</td>
+          </tr>
+          <tr>
+            <td>Refrigerante</td>
+            <td id="softDrink">1 garrafa de 2 L</td>
+          </tr>
+          <tr>
+            <td>Água</td>
+            <td> 1 garrafa de 1 L</td>
+          </tr>
+          <tr>
+            <td>Cerveja</td>
+            <td>3 garrafas de 600mL</td>
+          </tr>
+          <tr>
+            <td>Carvão</td>
+            <td>5 kg</td>
+          </tr>
+          <tr>
+            <td>Sal</td>
+            <td>0.2 kg</td>
+          </tr>
+          <tr>
+            <td>Gelo</td>
+            <td>2.5kg</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button type="button" id="btnNewBarbecue">Novo Cálculo</button>
+
+  </div>
+  
+</body>
+</html>

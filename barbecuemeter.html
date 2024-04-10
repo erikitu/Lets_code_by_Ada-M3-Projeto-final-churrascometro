@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="barbecuemeter.css">
+  <script src="barbecuemeter.js" defer></script>
+  <title>Churrascometro - calculadora</title>
+</head>
+<body class="">
+  <div class="toggle">
+    <input type="checkbox" name="" id="checkbox" checked>
+    <label for="checkbox" class="switch">
+      <span class="slider"></span>
+    </label>
+  </div>
+  <div class="content-wrapper">
+    <h1>Churrascômetro</h1>
+    <p>Precisa de uma ajudinha com o churrasco?</p>
+    <p>Quantas pessoas vão participar?</p>
+    <div class="boxCounters">
+      <div class="man">
+        <p>Homens</p>
+        <span class="number-man" >0</span>
+        <div class="counters">
+          <button type="button" onclick="updateValue('.number-man','remove')">-</button>
+          <button type="button" onclick="updateValue('.number-man','add')">+</button>
+        </div>
+      </div>
+      <div class="woman">
+        <p>Mulheres</p>
+        <span class="number-woman">0</span>
+        <div class="counters">
+          <button type="button" onclick="updateValue('.number-woman','remove')">-</button>
+          <button type="button" onclick="updateValue('.number-woman','add')">+</button>
+        </div>
+      </div>
+      <div class="children">
+        <p>Crianças</p>
+        <span class="number-children">0</span>
+        <div class="counters">
+          <button type="button" onclick="updateValue('.number-children','remove')">-</button>
+          <button type="button" onclick="updateValue('.number-children','add')">+</button>
+        </div>
+      </div>
+      <div class="consumesAlcohol">
+        <p>Quantos adultos bebem?</p>
+        <span class="number-consumesAlcohol">0</span>
+        <div class="counters">
+          <button type="button" onclick="updateValue('.number-consumesAlcohol','remove')">-</button>
+          <button type="button" onclick="updateValue('.number-consumesAlcohol','add')">+</button>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" id="btn-calc" onclick="wrapAndDeliver()">calcular</button>
+  </div>
+  
+</body>
+</html>

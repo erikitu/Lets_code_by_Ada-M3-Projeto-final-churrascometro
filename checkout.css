@@ -1,0 +1,41 @@
+/* main.css */
+@import url('main.css');
+
+#barbecueGuests {
+  background-color: var(--text-bt-color);
+  color: var(--bg-bt-color);
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 4px;
+}
+.listcontainer{
+  background-color: var(--bg-input-color);
+  padding: 8px;
+  border-radius: 8px;
+  margin: 4px;
+  line-height: 1.5;
+}
+th,td {
+  color: var(--text-bt-color);
+}
+th:first-child,td:first-child{
+  text-align: left;
+}
+th:last-child,td:last-child{
+  text-align: right;
+}
+
+td{
+  border-bottom: 1px dotted #000;
+}
+#btnNewBarbecue{
+  width: 120px;
+  padding: .5rem;
+  align-self: center;
+  background-color: var(--bg-bt-color);
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 1.5rem;
+}

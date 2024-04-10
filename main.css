@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --bg-color: #3F373C;
+  --text-color-primary: #EFA360;
+  --text-color-secondary: #FEFDF0;
+  --bg-bt-color: #E56132;
+  --bg-input-color: #A0948B;
+  --text-bt-color: #181C23;
+  --bg-image-night:url(assets/barbecue-night.jpg);
+  --bg-image-light:url(assets/barbecue-day.jpg);
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  color: var(--text-color-secondary);
+  text-align: center;
+  height: 100%;
+  background-image: var(--bg-image-night);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  backdrop-filter: blur(4px);
+  transition: all .5s ease-in-out;
+}
+
+body h1 {
+  color: var(--bg-bt-color);
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+body h1, p{
+  background-color: var(--text-bt-color);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+#checkbox {
+  display:none;
+}
+
+
+.switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #EFA360;
+  width:60px;
+  height:30px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+  background-color:#181C23;
+  border-radius:50%;
+  width:20px;
+  height:20px;
+  transition: all .5s ease-in-out;
+}
+
+#checkbox:checked ~ .switch{
+  background-color: #181C23;
+}
+
+#checkbox:checked ~ .switch .slider {
+  transform:translateX(30px);
+  background-color:#EFA360;
+}
+
+.light {
+  color: #EFA360;
+  background-image: var(--bg-image-light);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  backdrop-filter: blur(4px)
+}
+.content-wrapper {
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  
+}
+.content-wrapper h1 {
+  margin: 3rem;
+}
+
+
+#register-Form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  max-width: 20rem;
+
+}
+#register-Form input {
+  text-align:center;
+  border-radius: 5px;
+  padding: .5rem;
+  margin: .5rem;
+  background-color: var(--bg-input-color)
+}
+
+label{
+  background-color: var(--text-bt-color);
+  border-radius: 8px;
+  padding: 8px;
+  margin: 4px;
+}
+#btn-send{
+  width: 100px;
+  padding: .5rem;
+  align-self: center;
+  background-color: var(--bg-bt-color);
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+

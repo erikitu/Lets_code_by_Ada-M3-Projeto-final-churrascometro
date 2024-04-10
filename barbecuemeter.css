@@ -1,0 +1,66 @@
+/* main.css */
+@import url('main.css');
+
+.content-wrapper p{
+  background-color: #3F373C;
+  border-radius: 3px;
+  padding: 10px;
+}
+.boxCounters  {
+  display: flex;
+  justify-content: center; 
+}
+.counters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.man,.woman,.children,.consumesAlcohol{
+  background-color: var(--bg-input-color);
+  
+  margin: 10px;
+  border-radius: 8px;
+  border: 2px solid var(--bg-color);
+  width: 12rem;
+}
+.man p,
+.woman p,
+.children p,
+.consumesAlcohol p {
+  margin-bottom: 1rem;
+  padding: 10px;
+  font-size: 12px;
+  color:var(--text-color-secondary);
+  font-weight: bold;
+}
+
+.man span,
+.woman span,
+.children span,
+.consumesAlcohol span  {
+  font-size: 20px;
+}
+
+.man button,
+.woman button,
+.children button,
+.consumesAlcohol button {
+  margin: 16px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 24px;
+  cursor: pointer;
+  align-self: center;
+}
+
+#btn-calc{
+  width: 100px;
+  padding: .5rem;
+  align-self: center;
+  background-color: var(--bg-bt-color);
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
